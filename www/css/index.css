@@ -1,0 +1,9 @@
+/* popup bug: fix header text (see http://stackoverflow.com/a/13421207/1704895) */
+.ui-header .ui-title {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+div.ui-content {
+    text-align: center;
+}
