@@ -10,6 +10,7 @@
         <title>Task Manager</title>
     </head>
     <body>
+        
         <!-- Timer section -->
         <div data-role="page" id="timer">
             <div data-role="panel" id="navpanel1">
@@ -25,15 +26,24 @@
                 <a href="#user" data-role="button" data-icon="user" data-iconpos="notext" data-theme="b" class="ui-nodisc-icon">Navigation Panel</a>
             </div>
             <div data-role="main" class="ui-content">
-                <form>
+                <form class="ui-filterable">
                     <label for="client" class="ui-hidden-accessible">Client</label>
-                    <input type="search" id="client" placeholder="Client" />
+                    <input type="search" id="client" placeholder="Enter client" />
                     <label for="project" class="ui-hidden-accessible">Project</label>
                     <input type="search" id="project" placeholder="Project" />
+                    <!--
                     <label for="task" class="ui-hidden-accessible">Task</label>
                     <input type="search" id="task" placeholder="Task" />
                     <input type="button" id="start" value="Start" data-icon="arrow-r" data-inline="true" />
+                    -->
                 </form>
+                <!-- list of clients -->
+                <ul id="client-list" data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#client">
+                    <li><a href="#">Client 1</a></li>
+                    <li><a href="#">Client 2</a></li>
+                    <li><a href="#">Client 3</a></li>
+                    <li><a href="#">Client 4</a></li>
+                </ul>
             </div>
             <!-- timer popup -->
             <div data-role="popup" data-dismissible="false" id="timer-dialog">
